@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLibertadoresHAS", "AppLibertadoresHAS.csproj", "{FD3AE79A-ED81-9E32-2A4F-A4674E350422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD3AE79A-ED81-9E32-2A4F-A4674E350422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3AE79A-ED81-9E32-2A4F-A4674E350422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3AE79A-ED81-9E32-2A4F-A4674E350422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3AE79A-ED81-9E32-2A4F-A4674E350422}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B61144C5-7C86-47EC-A523-B1AC0B498BCD}
+	EndGlobalSection
+EndGlobal
