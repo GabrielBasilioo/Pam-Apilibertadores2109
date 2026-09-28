@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLibertadoresHAS.Views.Jogadores.ListagemJogadorView"
+             Title="ListagemJogadorView">
+    <ScrollView>
+        <VerticalStackLayout Padding="10,0,0,0">
+            <CollectionView x:Name="listView" ItemsSource="{Binding Jogadores}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" Padding="10" BackgroundColor="LightGray">
+                            <VerticalStackLayout Spacing="8">
+
+                                <Grid ColumnDefinitions="Auto,*">
+                                    <Label Grid.Column="0" FontSize="18" FontAttributes="Bold" 
+                                       Text="{Binding Numero}" Margin="0,0,10,0" />
+                                    <Label Grid.Column="1" FontSize="18" FontAttributes="Bold" 
+                                       Text="{Binding Nome}" />
+                                </Grid>
+                                <Label FontSize="14" 
+                                   Text="{Binding DataNascimento, StringFormat='Nascimento: {0:dd/MM/yyyy}'}" />
+
+                                <BoxView HeightRequest="1" BackgroundColor="Gray" />
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label FontSize="12" Text="{Binding Time.Nome, TargetNullValue='Sem Time'}" />
+                                    <Label FontSize="12" Text="-" />
+                                    <Label FontSize="12" Text="{Binding Posicao.Nome, TargetNullValue='Sem Posição'}" />
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
